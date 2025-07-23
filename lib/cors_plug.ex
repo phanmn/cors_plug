@@ -1,5 +1,5 @@
 defmodule CORSPlug do
-  import Plug.Conn, only: [merge_resp_headers: 2, halt: 0, send_resp: 3, get_resp_header: 2]
+  import Plug.Conn, only: [merge_resp_headers: 2, halt: 1, send_resp: 3, get_resp_header: 2, get_req_header: 2]
   @behaviour Plug
 
   def defaults do
