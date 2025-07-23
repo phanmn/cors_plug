@@ -1,5 +1,5 @@
 defmodule CORSPlug do
-  import Plug.Conn
+  @behaviour Plug
 
   def defaults do
     [
